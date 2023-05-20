@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Astro Express</string>
+    <string name="welcome">Astro Express</string>
+    <string name="phone_number">Mobile Number</string>
+    <string name="prompt_password">Password</string>
+    <string name="login">Login</string>
+    <string name="create_new">Click here for SignUp</string>
+    <string name="prompt_email">Email</string>
+    <string name="not_register">Click here for Login</string>
+    <string name="name">Name</string>
+    <string name="register">Register</string>
+    <string name="name_error">Please enter your name</string>
+    <string name="phone_error">Please enter your phone number</string>
+    <string name="email_error">Please enter your email address</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="password_error">Please enter a password</string>
+    <string name="error_invalid_password">Please enter a minimum password of 6 characters</string>
+    <string name="navigation_drawer_close">navigation_drawer_close</string>
+    <string name="navigation_drawer_open">navigation_drawer_open</string>
+    <string name="registered_office">Registered office</string>
+    <string name="gender">gender</string>
+
+    <string name="term">I agree to your</string>
+    <string name="service"><u>terms of service</u></string>
+    <string name="privacy"><u>privacy policies.</u></string>
+    <string name="and">and</string>
+    <string name="condition">A Terms and Conditions agreement is the agreement that includes the terms, the rules and the guidelines of acceptable behavior and other useful sections to which users must agree in order to use or access your website and mobile app.</string>
+    <string name="rating">Rating And Review</string>
+    <string-array name="numbers">
+        <item>+91</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="what">What is AstroExpress App?</string>
+    <string name="access">How to access AstroExpress App?</string>
+    <string name="use">Can I use a AstroExpress App for free?</string>
+    <string name="update">Is it possible to update my phone number?</string>
+    <string name="wallet">How do I recharge my wallet?</string>
+    <string name="money">My money got deducted but why is it not updated my wallet?</string>
+    <string name="payment">Is it safe to enter my payment details on AstroExpress App?</string>
+    <string name="check">How do I check my updated balance?</string>
+    <string name="invite">Invite your friends to AstroExpress</string>
+    <string name="get">and get</string>
+    <string name="code">Your Referred Code</string>
+    <string name="uses">Terms of Usage:</string>
+    <string name="install">Share your referral code or link with your friend to install AstroExpress.</string>
+    <string name="connect">Your friend sign-up AstroExpress and connect with first astrologer.</string>
+    <string name="receive">You will receive ₹100 once your friend has completed their first 10 minutes of conversation with the Astrologer.</string>
+    <string name="once">Once your friend has completed 40 minutes of conversation with the Astrologer, will receive ₹50.</string>
+    <string name="offer">Note: These offers are only applicable for new or first time user.</string>
+
+    <string name="successful">Your phone number has been successfully</string>
+    <string name="verified">Verified.</string>
+    <string name="refferal">Do you have referral code?</string>
+    <string name="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing.</string>
+    <string name="speech_prompt">speech_prompt</string>
+    <string name="speech_not_supported">speech_not_supported</string>
+    <string name="spinner_price">spinner Price</string>
+    <string name="spinner_experience">spinner Experience</string>
+    <string name="spinner_rating">spinner Rating</string>
+    <string name="experience">Experience</string>
+    <string name="sort_by">Sort By</string>
+    <string name="data_not_found_please_try_after_sometime">Data not found, Please try after sometime.</string>
+    <string name="no_record_found">No Record Found</string>
+
+
+</resources>

@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llFullBlogView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5dp"
+            app:cardCornerRadius="@dimen/dimen_10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtBlogTittle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Most Compatible Zodiac Signs- Find Your Best match"
+                    android:textSize="@dimen/dimen_22sp"
+                    android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtBlogBody"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Most Compatible Zodiac Signs- Find Your Best match Most Compatible Zodiac Signs- Find Your Best match Most Compatible Zodiac Signs- Find Your Best match Most Compatible Zodiac Signs- Find Your Best match Most Compatible Zodiac Signs- Find Your Best match Most Compatible Zodiac Signs- Find Your Best match Most Compatible Zodiac Signs- Find Your Best match Most Compatible Zodiac Signs- Find Your Best match"
+                        android:textSize="@dimen/dimen_15sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

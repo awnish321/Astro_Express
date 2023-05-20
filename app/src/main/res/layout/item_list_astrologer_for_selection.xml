@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/dimen_5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+
+                    <soup.neumorphism.NeumorphCardView
+                        android:id="@+id/image_container"
+                        style="@style/Widget.Neumorph.CardView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:neumorph_shapeType="flat"
+                        app:neumorph_shadowElevation="6dp"
+                        app:neumorph_shadowColorLight="#33000000"
+                        app:neumorph_shadowColorDark="#4D006794">
+
+                        <ImageView
+                            android:id="@+id/imgProfile"
+                            android:layout_width="105dp"
+                            android:layout_height="115dp"
+                            android:scaleType="centerCrop"
+                            android:background="@color/gray" />
+                    </soup.neumorphism.NeumorphCardView>
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/txtFollow"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_margin="@dimen/dimen_10dp"-->
+<!--                        android:background="@drawable/button_corner"-->
+<!--                        android:padding="2dp"-->
+<!--                        android:textColor="#006794"-->
+<!--                        android:text="+ Follow" />-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMyProfileView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="@dimen/dimen_2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RatingBar
+                            android:id="@+id/ratingBar"
+                            style="@style/RatingBar"
+                            android:theme="@style/ListRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:max="5"
+                            android:rating="3.5"/>
+
+                        <TextView
+                            android:id="@+id/txtRating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:text="4/5 (3.5k)" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*******"
+                        android:textColor="#006794"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_margin="@dimen/dimen_5dp"
+                            android:src="@drawable/dot" />
+
+                        <TextView
+                            android:id="@+id/txtSpacelist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Vastu Shastra,Vedic" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_margin="@dimen/dimen_5dp"
+                            android:src="@drawable/dot" />
+
+                        <TextView
+                            android:id="@+id/txtLanguage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="English,Hindi" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_margin="@dimen/dimen_5dp"
+                            android:src="@drawable/dot" />
+
+                        <TextView
+                            android:id="@+id/txtExperience"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Exp: 1 year" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_margin="@dimen/dimen_5dp"
+                            android:src="@drawable/dot" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <FrameLayout
+                                android:id="@+id/frameLayoutPrice"
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:layout_marginHorizontal="@dimen/dimen_5dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/txtCharge"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="\u20B9 28/min" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="3dp"
+                                    android:layout_gravity="center"
+                                    android:background="@color/red"
+                                    android:gravity="center"/>
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtDiscountCharge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\u20B9 28/min" />
+
+                        <ImageView
+                            android:id="@+id/imgFreeCallChat"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:padding="@dimen/dimen_3dp"
+                            android:visibility="gone"
+                            android:src="@drawable/free_call" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:id="@+id/txtWait"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="wait time"
+                            android:gravity="end"
+                            android:textColor="@color/red"
+                            android:layout_marginTop="@dimen/dimen_5dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen_2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="10dp">
+
+                            <TextView
+                                android:id="@+id/txtAstroStatus"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:background="@drawable/button_corner_base_blue"
+                                android:padding="@dimen/dimen_5dp"
+                                android:text="Online" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/imgBtnCall"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:padding="@dimen/dimen_5dp"
+                                android:layout_marginTop="@dimen/dimen_5dp"
+                                android:background="@drawable/button_corner"
+                                android:src="@drawable/ic_call" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom">
+
+                            <ImageView
+                                android:id="@+id/imgBtnChat"
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dimen_5dp"
+                                android:padding="@dimen/dimen_5dp"
+                                android:background="@drawable/button_corner"
+                                android:src="@drawable/ic_message" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_5dp"
+                            android:gravity="bottom">
+
+                            <TextView
+                                android:id="@+id/txtWaitTime"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

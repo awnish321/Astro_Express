@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/couponAddMoneyAmount0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_corner"
+            android:gravity="center"
+            android:padding="@dimen/dimen_5dp"
+            android:text="setting"
+            android:textColor="#006794"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/footerHelpdesk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_corner"
+            android:gravity="center"
+            android:padding="@dimen/dimen_5dp"
+            android:text="helpdesk"
+            android:textColor="#006794"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/footerLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_corner"
+            android:gravity="center"
+            android:padding="@dimen/dimen_5dp"
+            android:text="Logout"
+            android:textColor="#006794"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

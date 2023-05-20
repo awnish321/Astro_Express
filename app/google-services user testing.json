@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "930126416135",
+    "firebase_url": "https://staging-astro-express-default-rtdb.firebaseio.com",
+    "project_id": "staging-astro-express",
+    "storage_bucket": "staging-astro-express.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930126416135:android:985ee498965ff55ade1da2",
+        "android_client_info": {
+          "package_name": "com.astroexpress.astrologer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "930126416135-2kcclrmmlkv2tqvkudtg98f270un7hse.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiKMRFi-nkvV2XWVJ2zgz61g2g5Iq053E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "930126416135-2kcclrmmlkv2tqvkudtg98f270un7hse.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930126416135:android:de83e78dc8675f9cde1da2",
+        "android_client_info": {
+          "package_name": "com.astroexpress.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "930126416135-08icmdmuje4sf7mkamtk0fuacg5cjlta.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.astroexpress.user",
+            "certificate_hash": "351fe2b0d1aac4c1a225e31652a0588d5370f8cb"
+          }
+        },
+        {
+          "client_id": "930126416135-li5rgruua7uu81oklqs7oh88oqogavsv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.astroexpress.user",
+            "certificate_hash": "dfa945b9ad64fa772a67b265398603b3b567e21b"
+          }
+        },
+        {
+          "client_id": "930126416135-2kcclrmmlkv2tqvkudtg98f270un7hse.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiKMRFi-nkvV2XWVJ2zgz61g2g5Iq053E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "930126416135-2kcclrmmlkv2tqvkudtg98f270un7hse.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

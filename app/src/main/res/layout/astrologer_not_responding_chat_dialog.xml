@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        android:layout_margin="@dimen/dimen_15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/dimen_10dp"
+            app:strokeWidth="@dimen/dimen_2dp"
+            app:strokeColor="@color/dark_blue">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10dp"
+            android:background="@drawable/button_corner"
+            android:orientation="vertical">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/CorrWrong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:src="@drawable/unable_to_connect_chat" />
+
+            <TextView
+                android:id="@+id/txtClose"
+                android:layout_width="250dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_gravity="bottom|center"
+                android:layout_marginVertical="@dimen/dimen_10dp"
+                android:text="Close"
+                android:textStyle="bold"
+                android:background="@drawable/button_corner"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textColor="@color/dark_blue"
+                android:textSize="18dp" />
+
+        </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "535559312213",
+    "firebase_url": "https://astroexpress-32300-default-rtdb.firebaseio.com",
+    "project_id": "astroexpress-32300",
+    "storage_bucket": "astroexpress-32300.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535559312213:android:ac60d5105c55444e0155dc",
+        "android_client_info": {
+          "package_name": "com.astroexpress.astrologer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "535559312213-0qljah7nicamoub6o2cqivob6pjbndlj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.astroexpress.astrologer",
+            "certificate_hash": "838a3edd7c900ff3389e998b3c6f232b64e7d3bb"
+          }
+        },
+        {
+          "client_id": "535559312213-q46pn291dd5ig6c48jj8d8umfn0qf624.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq37pRvDu0Uzyu14kk5gljRNzmkvduhLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "535559312213-q46pn291dd5ig6c48jj8d8umfn0qf624.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535559312213:android:d5cba4b66aa018bd0155dc",
+        "android_client_info": {
+          "package_name": "com.astroexpress.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "535559312213-mh17ahqkohe10inu3ckamb215jh3v6tu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.astroexpress.user",
+            "certificate_hash": "dfa945b9ad64fa772a67b265398603b3b567e21b"
+          }
+        },
+        {
+          "client_id": "535559312213-thlnchct8s9o9c88uevqem17dlj03aim.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.astroexpress.user",
+            "certificate_hash": "d3702a37ef99445e29a6aa84530d98c0ba8b1d82"
+          }
+        },
+        {
+          "client_id": "535559312213-q46pn291dd5ig6c48jj8d8umfn0qf624.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq37pRvDu0Uzyu14kk5gljRNzmkvduhLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "535559312213-q46pn291dd5ig6c48jj8d8umfn0qf624.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

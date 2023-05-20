@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.UserAddressActivity">
+
+    <include
+        android:id="@+id/layoutToolbar"
+        layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:id="@+id/flView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/loadUserSavedAddressList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieProgressBar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/loading"
+            app:lottie_speed="2" />
+
+        <LinearLayout
+            android:id="@+id/llSaveAddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_5dp"
+            android:visibility="gone">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                app:cardCornerRadius="@dimen/dimen_25dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_circular_border"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen_10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="User name :"
+                                android:textColor="@color/dark_blue" />
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/dimen_5dp"
+                                android:layout_weight="1"
+                                app:cardCornerRadius="@dimen/dimen_5dp">
+
+                                <EditText
+                                    android:id="@+id/editUserName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/transparent"
+                                    android:hint="User Name"
+                                    android:padding="@dimen/dimen_10dp"
+                                    android:textColor="@color/dark_blue"
+                                    android:textSize="@dimen/dimen_15sp"
+                                    android:textStyle="bold" />
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!--                            <LinearLayout-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_weight="1"-->
+                        <!--                                android:orientation="vertical">-->
+
+                        <!--                                <TextView-->
+                        <!--                                    android:layout_width="match_parent"-->
+                        <!--                                    android:layout_height="wrap_content"-->
+                        <!--                                    android:text="Marital Status :"-->
+                        <!--                                    android:textColor="@color/dark_blue" />-->
+
+                        <!--                                <androidx.cardview.widget.CardView-->
+                        <!--                                    android:layout_width="match_parent"-->
+                        <!--                                    android:layout_height="wrap_content"-->
+                        <!--                                    android:layout_gravity="center"-->
+                        <!--                                    android:layout_margin="@dimen/dimen_5dp"-->
+                        <!--                                    android:layout_weight="1"-->
+                        <!--                                    app:cardCornerRadius="@dimen/dimen_5dp">-->
+
+                        <!--                                    <EditText-->
+                        <!--                                        android:id="@+id/editUserMaritalStatus"-->
+                        <!--                                        android:layout_width="match_parent"-->
+                        <!--                                        android:layout_height="wrap_content"-->
+                        <!--                                        android:background="@color/transparent"-->
+                        <!--                                        android:hint="MaritalStatus"-->
+                        <!--                                        android:padding="@dimen/dimen_10dp" />-->
+
+                        <!--                                </androidx.cardview.widget.CardView>-->
+
+                        <!--                            </LinearLayout>-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="House No/Plot No/Building No"
+                                android:textColor="@color/dark_blue" />
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/dimen_5dp"
+                                android:layout_weight="1"
+                                app:cardCornerRadius="@dimen/dimen_5dp">
+
+                                <EditText
+                                    android:id="@+id/editUserAddress1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/transparent"
+                                    android:hint="House No/Plot No/Building No"
+                                    android:padding="12dp"
+                                    android:textColor="@color/dark_blue"
+                                    android:textSize="@dimen/dimen_15sp"
+                                    android:textStyle="bold" />
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!--                            <LinearLayout-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_weight="1"-->
+                        <!--                                android:orientation="vertical">-->
+
+                        <!--                                <TextView-->
+                        <!--                                    android:layout_width="match_parent"-->
+                        <!--                                    android:layout_height="wrap_content"-->
+                        <!--                                    android:text="Preferred language :"-->
+                        <!--                                    android:textColor="@color/dark_blue" />-->
+
+                        <!--                                <androidx.cardview.widget.CardView-->
+                        <!--                                    android:layout_width="match_parent"-->
+                        <!--                                    android:layout_height="wrap_content"-->
+                        <!--                                    android:layout_gravity="center"-->
+                        <!--                                    android:layout_margin="@dimen/dimen_5dp"-->
+                        <!--                                    android:layout_weight="1"-->
+                        <!--                                    app:cardCornerRadius="@dimen/dimen_5dp">-->
+
+                        <!--                                    <EditText-->
+                        <!--                                        android:id="@+id/editUserPreferredLanguage"-->
+                        <!--                                        android:layout_width="match_parent"-->
+                        <!--                                        android:layout_height="wrap_content"-->
+                        <!--                                        android:background="@color/transparent"-->
+                        <!--                                        android:hint="Language"-->
+                        <!--                                        android:padding="@dimen/dimen_10dp" />-->
+
+                        <!--                                </androidx.cardview.widget.CardView>-->
+
+                        <!--                            </LinearLayout>-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Area/Colony/Road Name "
+                                android:textColor="@color/dark_blue" />
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/dimen_5dp"
+                                android:layout_weight="1"
+                                app:cardCornerRadius="@dimen/dimen_5dp">
+
+                                <EditText
+                                    android:id="@+id/editUserAddress2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/transparent"
+                                    android:hint="Area/Colony/Road Name "
+                                    android:padding="@dimen/dimen_10dp"
+                                    android:textColor="@color/dark_blue"
+                                    android:textSize="@dimen/dimen_15sp"
+                                    android:textStyle="bold" />
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Landmark "
+                        android:textColor="@color/dark_blue" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/dimen_5dp"
+                        app:cardCornerRadius="@dimen/dimen_5dp">
+
+                        <EditText
+                            android:id="@+id/editUserLandmark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:hint="Landmark "
+                            android:padding="@dimen/dimen_10dp"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="@dimen/dimen_15sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="City :"
+                                android:textColor="@color/dark_blue" />
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/dimen_5dp"
+                                android:layout_weight="1"
+                                app:cardCornerRadius="@dimen/dimen_5dp">
+
+                                <EditText
+                                    android:id="@+id/editUserCity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/transparent"
+                                    android:hint="City"
+                                    android:padding="@dimen/dimen_10dp"
+                                    android:textColor="@color/dark_blue"
+                                    android:textSize="@dimen/dimen_15sp"
+                                    android:textStyle="bold" />
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Mobile :"
+                                android:textColor="@color/dark_blue" />
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/dimen_5dp"
+                                android:layout_weight="1"
+                                app:cardCornerRadius="@dimen/dimen_5dp">
+
+                                <EditText
+                                    android:id="@+id/editUserMobile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/transparent"
+                                    android:hint="Mobile"
+                                    android:padding="@dimen/dimen_10dp"
+                                    android:textColor="@color/dark_blue"
+                                    android:textSize="@dimen/dimen_15sp"
+                                    android:textStyle="bold" />
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Pin Code"
+                                android:textColor="@color/dark_blue" />
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/dimen_5dp"
+                                android:layout_weight="1"
+                                app:cardCornerRadius="@dimen/dimen_5dp">
+
+                                <EditText
+                                    android:id="@+id/editUserPin"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/transparent"
+                                    android:hint="Pincode"
+                                    android:padding="@dimen/dimen_10dp"
+                                    android:textColor="@color/dark_blue"
+                                    android:textSize="@dimen/dimen_15sp"
+                                    android:textStyle="bold" />
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/dimen_10dp"
+                        app:cardCornerRadius="@dimen/dimen_20dp"
+                        app:cardElevation="@dimen/dimen_5dp">
+
+                        <Button
+                            android:id="@+id/btnSubmitNewAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/buttonbackground"
+                            android:padding="@dimen/dimen_10dp"
+                            android:text="Submit"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnAddNewAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:background="@drawable/buttonbackground"
+        android:padding="@dimen/dimen_10dp"
+        android:text="Add New +"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>
